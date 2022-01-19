@@ -1,0 +1,155 @@
+/* google fonts  */
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400&family=Spartan&display=swap');
+
+/* colors */ 
+
+:root {
+    --white: #fff;
+    --black: #070724;
+    --dark-grey: #38384f;
+    --light-grey: #838391;
+    --mercury-blue: #419ebb;
+    --venus-orange: #eda249;
+    --earth-purple: #6f2ed6;
+    --mars-red: #d14c32;
+    --jupiter-red: #d83a34;
+    --saturn-tan: #cd5120;
+    --uranus-green: #1ec2a4;
+    --neptune-blue: #2d68f0; 
+    font-size: 62.5%; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.hide {
+    display: none;
+}
+
+.change-grey {
+    opacity: .2;
+}
+
+/* typogrophy  */
+
+h1, h2{
+    font-family: 'Antonio', sans-serif;
+    text-transform: uppercase;
+}
+
+h3, h4 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 8rem;
+    line-height: 10.3rem;
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: 5.2rem;
+    letter-spacing: -1.5px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    letter-spacing: 2.6px;
+}
+
+h4 {
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+}
+
+body {
+    color: var(--white);
+    font-family: 'Spartan', sans-serif;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    background: var(--black) url(/img/background-stars.svg)  no-repeat top center;
+}
+
+
+/* buttons  */
+
+
+
+
+/* navbar mobile  */
+.logo h2 {
+    font-size: 3.5rem;
+}
+
+
+.navbar-small {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content:space-between;
+    align-items: center;
+    padding:1.5em;
+    border-bottom: 1px solid var(--dark-grey);
+}
+
+.hamburger {
+    background: var(--black) url(/img/icon-hamburger.svg) no-repeat;
+    background-size: cover;
+    width: 3rem; height: 2.5rem;
+    cursor: pointer;
+}
+
+.nav-dropdown {
+    width: 100%;
+    background-color: var(--black);
+}
+
+.nav-wrapper-sm {
+    margin: 0 auto;
+    width: 90%;
+    padding: 1.5em 0;
+}
+
+.nav-item-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    padding: 1em 0;
+    align-items: flex-end;
+    border-bottom: 1px solid var(--dark-grey);
+   
+}
+
+.nav-icon {
+   width: 3rem;
+   height: 3rem;
+   border-radius: 100px;
+}
+
+.navlink-sm {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.nav-chev {
+    background: url('/img/icon-chevron.svg') center no-repeat;
+    width: 2rem; height: 3rem;
+    margin-left: auto;
+}
+
+
+
+
