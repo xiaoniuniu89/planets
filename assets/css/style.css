@@ -20,6 +20,48 @@
     font-size: 62.5%; 
 }
 
+.active-Mercury {
+    border-bottom: .5rem solid var(--mercury-blue)
+}
+
+.active-Venus {
+    border-bottom: .5rem solid var(--venus-orange)
+}
+
+
+.active-Earth {
+    border-bottom: .5rem solid var(--earth-purple)
+}
+
+
+.active-Mars {
+    border-bottom: .5rem solid var(--mars-red)
+}
+
+
+.active-Jupiter {
+    border-bottom: .5rem solid var(--jupiter-red)
+}
+
+
+.active-Saturn {
+    border-bottom: .5rem solid var(--saturn-tan)
+}
+
+
+.active-Uranus {
+    border-bottom: .5rem solid var(--uranus-green)
+}
+
+
+.active-Neptune {
+    border-bottom: .5rem solid var(--neptune-blue)
+}
+
+.inactive {
+    border-bottom: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -167,13 +209,15 @@ body {
     padding: 1em .5em;
 }
 
-.active {
-    border-bottom: .5rem solid green;
-}
+
 
 .hide {
     display: none;
 }
+
+
+/* tablet and desktop navbar  */
+
 
 
 @media screen and (min-width: 768px) {

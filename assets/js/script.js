@@ -13,8 +13,8 @@ hamburger.addEventListener('click', () => {
 
 function clearActiveTab() {
     mTabItems.forEach(mTabItem =>{
-        if(mTabItem.classList.contains('active')){
-            mTabItem.classList.remove('active')
+        if(!mTabItem.classList.contains('inactive')){
+            mTabItem.classList.add('inactive')
         }
     })
 }
@@ -24,7 +24,7 @@ function clearActiveTab() {
 mTabItems.forEach(tab => {
     tab.addEventListener('click', (e) => {
         clearActiveTab()
-        e.target.classList.toggle('active')
+        e.target.classList.toggle('inactive')
     })
 })
 
