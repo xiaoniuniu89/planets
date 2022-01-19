@@ -31,12 +31,13 @@ a {
     text-decoration: none;
 }
 
-.hide {
-    display: none;
-}
 
 .change-grey {
     opacity: .2;
+}
+
+.navbar-big {
+    display: none;
 }
 
 /* typogrophy  */
@@ -46,8 +47,9 @@ h1, h2{
     text-transform: uppercase;
 }
 
-h3, h4 {
+h3, h4, .mobile-tab-link {
     font-family: 'Spartan', sans-serif;
+    text-transform: uppercase;
     font-weight: bold;
 }
 
@@ -62,7 +64,7 @@ h2 {
     letter-spacing: -1.5px;
 }
 
-h3 {
+h3, .mobile-tab-link {
     font-size: 1.2rem;
     line-height: 2.5rem;
     letter-spacing: 2.6px;
@@ -148,8 +150,42 @@ body {
     background: url('/img/icon-chevron.svg') center no-repeat;
     width: 2rem; height: 3rem;
     margin-left: auto;
+    
 }
 
 
+.mobile-tabs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+   
+    border-bottom: 1px solid var(--dark-grey);
+}
 
 
+.mobile-tab-link {
+    padding: 1em .5em;
+}
+
+.active {
+    border-bottom: .5rem solid green;
+}
+
+.hide {
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    .navbar-small {
+        display: none;
+    }
+
+    .mobile-tabs {
+        display: none;
+    }
+
+    .navbar-big {
+        display: initial;
+    }
+}
