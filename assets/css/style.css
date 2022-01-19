@@ -78,9 +78,6 @@ a {
     opacity: .2;
 }
 
-.navbar-big {
-    display: none;
-}
 
 /* typogrophy  */
 
@@ -112,7 +109,7 @@ h3, .mobile-tab-link {
     letter-spacing: 2.6px;
 }
 
-h4 {
+h4, .navlink-bg {
     font-size: 1.1rem;
     line-height: 2.5rem;
     letter-spacing: 1px;
@@ -182,7 +179,7 @@ body {
    border-radius: 100px;
 }
 
-.navlink-sm {
+.navlink-sm, .navlink-bg {
     text-transform: uppercase;
     font-size: 1.7rem;
     font-weight: bold;
@@ -218,6 +215,30 @@ body {
 
 /* tablet and desktop navbar  */
 
+.navbar-big {
+    display: none;
+    flex-direction: column;
+    padding: 1em;
+    border-bottom: 1px solid var(--dark-grey);
+}
+
+.logo {
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 1em ;
+}
+
+.navlink-bg {
+    font-family: 'Spartan', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -230,6 +251,81 @@ body {
     }
 
     .navbar-big {
-        display: initial;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar-big {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0;
+    }
+
+    .logo {
+        margin: 0;
+        margin-top: 1.2em;
+        padding: .7em;
+        font-size: .8rem;
+    }
+    .nav-items {
+        gap: 2em;
+        padding: 0;
+    }
+
+    .navlink-bg {
+        padding: 2.2em .5em 1em 0;
+    }
+
+        
+    .active-Mercury:hover {
+        border-top: .4em solid var(--mercury-blue);
+        padding-top: 1.8em;
+    }
+
+    .active-Venus:hover {
+        border-top: .4em solid var(--venus-orange);
+        padding-top: 1.8em;
+    }
+
+
+    .active-Earth:hover {
+        border-top: .4em solid var(--earth-purple);
+        padding-top: 1.8em;
+    }
+
+
+    .active-Mars:hover {
+        border-top: .4em solid var(--mars-red);
+        padding-top: 1.8em;
+    }
+
+
+    .active-Jupiter:hover {
+        border-top: .4em solid var(--jupiter-red);
+        padding-top: 1.8em;
+    }
+
+
+    .active-Saturn:hover {
+        border-top: .4em solid var(--saturn-tan);
+        padding-top: 1.8em;
+    }
+
+
+    .active-Uranus:hover {
+        border-top: .4em solid var(--uranus-green);
+        padding-top: 1.8em;
+    }
+
+
+    .active-Neptune:hover {
+        border-top: .4em solid var(--neptune-blue);
+        padding-top: 1.8em;
+    }
+
+    .inactive {
+        border-top: none;
     }
 }

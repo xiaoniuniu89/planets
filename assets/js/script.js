@@ -2,6 +2,8 @@ const hamburger = document.querySelector('.hamburger')
 const dropdown = document.querySelector('.nav-dropdown')
 const mTabs = document.querySelector('.mobile-tabs')
 const mTabItems = document.querySelectorAll('.mobile-tab-link')
+const lNavItems = document.querySelectorAll('.navlink-bg')
+
 
 hamburger.addEventListener('click', () => {
     dropdown.classList.toggle('hide');
@@ -27,4 +29,7 @@ mTabItems.forEach(tab => {
         e.target.classList.toggle('inactive')
     })
 })
+
+
+
 
