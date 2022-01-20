@@ -98,6 +98,10 @@ a {
     opacity: .5;
 }
 
+.tabs-lg {
+    display: none;
+}
+
 
 /* typogrophy  */
 
@@ -142,6 +146,9 @@ body {
     line-height: 2.5rem;
     background: var(--black) url(/img/background-stars.svg)  no-repeat top center;
 }
+
+
+
 
 
 /* buttons  */
@@ -260,8 +267,8 @@ body {
 
 /* planets styles  */
 
-.content-wrapper {
-    width: 90%;
+.content-wrapper, .content-wrapper-b {
+    width: 99%;
     margin: 1em auto;
     display: flex;
     flex-direction: column;
@@ -314,16 +321,16 @@ body {
     width: 46.1%;
     
 }
-.info-txt {
+.overview-txt, .structure-txt, .surface-txt {
     text-align: center;
     padding: 0 1em 2em;
 }
 
-.info-txt h2 {
+.overview-txt h2, .structure-txt h2, .surface-txt h2 {
     padding: 0  0 .5em;
 }
 
-.info-txt small {
+.overview-txt small, .structure-txt small, .surface-txt small {
     padding: 3em 0 2em;
     display: block;
 }
@@ -346,21 +353,27 @@ body {
 .info-facts {
     width: 90%;
     margin: 0 auto;
+    padding: .5em;
 }
 
 .info-facts h2 {
-    font-size: 3rem;
+    font-size: 2rem;
+}
+
+.info-facts h3 {
+    font-size: .8rem;
+    opacity: .8;
 }
 
 
-.fact {
+.fact, .border-b {
     width: 100%;
     border: .5px solid var(--light-grey);
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 1em 0;
-    padding: .8em;
+    padding: .5em 1em;
 }
 
 .surface-wrapper {
@@ -395,14 +408,117 @@ body {
         display: none;
     }
 
+    
+
     .navbar-big {
         display: flex;
     }
 
     .logo {
         margin: 0 auto;
-        padding: 2em;
+        padding: 1.5em;
     }
+
+    .content-wrapper {
+        width: 95%;
+    }
+
+    .info-card {
+        display: flex;
+        gap: 5%;
+    }
+
+    .tabs-lg {
+        display: block;
+        width: 45%;
+    }
+
+    .txt-wrapper {
+        width: 50%;
+    }
+
+    .info-txt {
+        text-align: left;
+    }
+
+    .border-b {
+        justify-content: flex-start;
+        gap: 1em;
+        align-items: center;
+    }
+
+    .big-tab-link h3 {
+        font-size: 1rem;
+    }
+
+    .active-Mercury {
+        background-color: var(--mercury-blue);
+    }
+    
+    .active-Venus {
+        background-color: var(--venus-orange);    
+    }
+    
+    
+    .active-Earth {
+        background-color: var(--earth-purple);
+    }
+    
+    
+    .active-Mars {
+        background-color: var(--mars-red);
+    }
+    
+    
+    .active-Jupiter {
+        background-color: var(--jupiter-red);
+    }
+    
+    
+    .active-Saturn {
+        background-color: var(--saturn-tan);
+    }
+    
+    
+    .active-Uranus {
+        background-color: var(--uranus-green);
+    }
+    
+    
+    .active-Neptune {
+        background-color: var(--neptune-blue);
+    }
+    
+    .inactive {
+        background-color: transparent;
+        opacity: 1;
+    }
+
+    .info-facts {
+        display: flex;
+        gap: 1em;
+    }
+
+    .fact {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .surface-pic {
+        width: 76.5px; height: 94.5px;
+        position: relative; top: 0px; 
+    }
+
+    .surface-pic.pic-mercury {
+        top: 55px;
+    } 
+    
+    .surface-pic.pic-saturn {
+        top: -60px;
+    } 
+
+    
 }
 
 @media screen and (min-width: 1200px) {
@@ -475,7 +591,10 @@ body {
         padding-top: 1.8em;
     }
 
-    .inactive {
+
+
+
+    /* .inactive {
         border-top: none;
-    }
+    } */
 }
