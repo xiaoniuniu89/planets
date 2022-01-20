@@ -16,11 +16,13 @@ app.use(morgan('dev'))
 
 
 // listen for requests
-PORT = process.env.PORT | 3500
+// PORT = process.env.PORT || 3500
 
-app.listen(PORT, () => {
-    console.log(`running on PORT ${PORT}`)
-});
+// app.listen(PORT, () => {
+//     console.log(`running on PORT ${PORT}`)
+// });
+
+app.listen(process.env.PORT || 3000);
 
 app.get('/', (req, res) => {
     res.redirect('/mercury')
