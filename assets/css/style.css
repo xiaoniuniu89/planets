@@ -447,6 +447,10 @@ body {
         align-items: center;
     }
 
+    .big-tab-link {
+        cursor: pointer;
+    }
+
     .big-tab-link h3 {
         font-size: 1rem;
     }
@@ -545,56 +549,110 @@ body {
     }
 
         
-    .active-Mercury:hover {
+    .nav-active-Mercury:hover {
         border-top: .4em solid var(--mercury-blue);
         padding-top: 1.8em;
     }
 
-    .active-Venus:hover {
+    .nav-active-Venus:hover {
         border-top: .4em solid var(--venus-orange);
         padding-top: 1.8em;
     }
 
 
-    .active-Earth:hover {
+    .nav-active-Earth:hover {
         border-top: .4em solid var(--earth-purple);
         padding-top: 1.8em;
     }
 
 
-    .active-Mars:hover {
+    .nav-active-Mars:hover {
         border-top: .4em solid var(--mars-red);
         padding-top: 1.8em;
     }
 
 
-    .active-Jupiter:hover {
+    .nav-active-Jupiter:hover {
         border-top: .4em solid var(--jupiter-red);
         padding-top: 1.8em;
     }
 
 
-    .active-Saturn:hover {
+    .nav-active-Saturn:hover {
         border-top: .4em solid var(--saturn-tan);
         padding-top: 1.8em;
     }
 
 
-    .active-Uranus:hover {
+    .nav-active-Uranus:hover {
         border-top: .4em solid var(--uranus-green);
         padding-top: 1.8em;
     }
 
 
-    .active-Neptune:hover {
+    .nav-active-Neptune:hover {
         border-top: .4em solid var(--neptune-blue);
         padding-top: 1.8em;
     }
 
+    .content-wrapper {
+        flex-direction: row;
+        height: 600px;
+        width: 80%;
+    }
+
+    .planet-picture {
+        width: 70%;
+     
+    }
+
+    .info-card {
+        flex-direction: column;
+        width: 30%;
+        padding: 5em 1em 1em;
+        margin-left: auto;
+        align-self: flex-end;
+      
+    }
+
+    .big-tab-link h3 {
+        font-size: 1.2rem;
+    }
 
 
+    .info-facts {
+        width: 80%;
+        gap: 2em;
+    }
 
-    /* .inactive {
-        border-top: none;
-    } */
+    .info-facts h2 {
+        font-size: 5rem;
+        padding: 2rem ;
+    }
+    
+    .info-facts h3 {
+        font-size: 1rem;
+        opacity: .8;
+    }
+     
+    .txt-wrapper, .tabs-lg {
+        width: 100%;
+    }
+
+   .big-tab-link.inactive:hover {
+       background-color: var(--dark-grey);
+   }
+
+   .surface-pic {
+    width: 163.5px; height: 199.5px;
+    position: relative; top: 70px; 
+}
+
+.surface-pic.pic-mercury {
+    top: 55px;
+} 
+
+.surface-pic.pic-saturn {
+    top: 70px;
+} 
 }
