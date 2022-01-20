@@ -599,7 +599,7 @@ body {
 
     .content-wrapper {
         flex-direction: row;
-        height: 92vh;
+        /* height: 92vh; */
         width: 90%;
         padding: 3em ;
     }
@@ -620,7 +620,7 @@ body {
     }
 
     .info-txt > small {
-        padding: 4em 0 0;
+        padding: 3em 0 0;
     }
 
     .info-card {
