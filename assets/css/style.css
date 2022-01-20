@@ -158,7 +158,7 @@ body {
 
 /* navbar mobile  */
 .logo h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 
@@ -229,8 +229,9 @@ body {
 
 
 .mobile-tab-link {
-    padding: 1em .5em;
+    padding: 1em .2em;
     cursor: pointer;
+    font-size: .8rem;
 }
 
 
@@ -323,7 +324,7 @@ body {
 }
 .overview-txt, .structure-txt, .surface-txt {
     text-align: center;
-    padding: 0 1em 2em;
+    padding: 0 1em;
 }
 
 .overview-txt h2, .structure-txt h2, .surface-txt h2 {
@@ -331,7 +332,7 @@ body {
 }
 
 .overview-txt small, .structure-txt small, .surface-txt small {
-    padding: 3em 0 2em;
+    padding: 2em 0 0;
     display: block;
 }
 
@@ -353,7 +354,7 @@ body {
 .info-facts {
     width: 90%;
     margin: 0 auto;
-    padding: .5em;
+    padding: 0 .5em;
 }
 
 .info-facts h2 {
@@ -382,16 +383,9 @@ body {
 
 .surface-pic {
     width: 56.5px; height: 74.5px;
-    position: relative; top: 50px; 
+    position: relative; top: 40px; 
 }
 
-.surface-pic.pic-mercury {
-    top: 60px;
-} 
-
-.surface-pic.pic-saturn {
-    top: 15px;
-} 
 
 @media screen and (min-width: 450px) {
     .surface-pic.pic-saturn {
@@ -412,6 +406,7 @@ body {
 
     .navbar-big {
         display: flex;
+        padding-top: 0;
     }
 
     .logo {
@@ -426,11 +421,13 @@ body {
     .info-card {
         display: flex;
         gap: 5%;
+        padding: 4em 0 0 0 ;
     }
 
     .tabs-lg {
         display: block;
         width: 45%;
+        padding-top: 3em;
     }
 
     .txt-wrapper {
@@ -506,6 +503,7 @@ body {
     .fact {
         flex-direction: column;
         align-items: flex-start;
+
     }
 
 
@@ -530,18 +528,22 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding-top: 0;
+        padding: 0;
     }
 
     .logo {
         margin: 0;
-        margin-top: 1.2em;
-        padding: .7em;
-        font-size: .8rem;
+        padding: 1.2em 2em;
+        font-weight: 200;
     }
+
+    .logo > h2 {
+        font-size: 2.5rem;
+    }
+
     .nav-items {
         gap: 2em;
-        padding: 0;
+        padding: 0 2em 0 0 ;
     }
 
     .navlink-bg {
@@ -597,21 +599,38 @@ body {
 
     .content-wrapper {
         flex-direction: row;
-        height: 600px;
-        width: 80%;
+        height: 92vh;
+        width: 90%;
+        padding: 3em ;
+    }
+
+    .tabs-lg {
+        padding-top: 1em;
     }
 
     .planet-picture {
-        width: 70%;
+        width: 60%;
      
+    }
+
+    .info-txt > h2 {
+        font-size: 7rem;
+        letter-spacing: 5px;
+        line-height: 5rem;
+    }
+
+    .info-txt > small {
+        padding: 4em 0 0;
     }
 
     .info-card {
         flex-direction: column;
-        width: 30%;
-        padding: 5em 1em 1em;
-        margin-left: auto;
-        align-self: flex-end;
+        width: 35%;
+        padding: 6em 1em 0;
+        margin: 1em 0 2em auto;
+        height: 100%;
+       
+        
       
     }
 
@@ -619,15 +638,28 @@ body {
         font-size: 1.2rem;
     }
 
+    .big-tab-link {
+        padding: .8em 0 .8em 0.5em ;
+        width: 90%;
+        min-width: 350px;
+    }
+
 
     .info-facts {
         width: 80%;
         gap: 2em;
+        padding: 1em 0 3em;
+        opacity: .9;
+    }
+
+    .fact {
+        border: .3px solid var(--dark-grey);
+
     }
 
     .info-facts h2 {
-        font-size: 5rem;
-        padding: 2rem ;
+        font-size: 4rem;
+        padding: 1.5rem ;
     }
     
     .info-facts h3 {
@@ -639,8 +671,17 @@ body {
         width: 100%;
     }
 
+    .big-tab-link.border-b {
+        border: .5px solid transparent;
+    }
+
+    .big-tab-link.inactive{
+        border: .5px solid var(--dark-grey);
+    }
+
    .big-tab-link.inactive:hover {
        background-color: var(--dark-grey);
+       border-color: transparent;
    }
 
    .surface-pic {
@@ -655,4 +696,50 @@ body {
 .surface-pic.pic-saturn {
     top: 70px;
 } 
+
+
+
+.pic-mercury {
+    width: 39%;
+    min-width: 290px;
+}
+
+.pic-venus {
+    width: 41.2%;
+    min-width: 400px;
+    
+}
+
+.pic-earth {
+    width: 46.2%;
+    min-width: 450px;
+}
+
+.pic-mars {
+    width: 34.4%;
+    min-width: 336px;
+    
+}
+
+.pic-jupiter {
+    width: 59.75%;
+    min-width: 582px;
+}
+
+.pic-saturn {
+    width: 68.5%;
+    min-width: 669px;
+}
+
+.pic-uranus {
+    width: 46.93%;
+    min-width: 458px;
+    
+}
+
+.pic-neptune {
+    width: 46.1%;
+    min-width: 450px;
+    
+}
 }

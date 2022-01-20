@@ -1,52 +1,60 @@
-<div class="content-wrapper">
-    <div class="planet-picture">
-        <img class="planet-pic overview overview-pic pic-<%- name.toLowerCase() %>" src="<%- images.planet %>" alt="the surface of <%-name%>">
-        <img class=" planet-pic structure structure-pic hide pic-<%- name.toLowerCase() %>" src="<%- images.internal %>" alt="the internal core of <%-name%>">
-        <div class="surface-wrapper"><img class=" planet-pic surface surface-pic hide pic-<%- name.toLowerCase() %>" src="<%- images.geology %>" alt="the geology of <%-name%>"></div>
-    </div>
-    <div class="info-card">
-        <div class="txt-wrapper">
-            <div class="info-txt overview overview-txt">
-                <h2><%-name%></h2>
-                <p><%-overview.content%></p>
-                <small class="washed-out">Source: <a class='planet-link' href="<%-overview.source%>" target="_blank">Wikipedia</a></small>
+<body>
+    <main>
+        <div class="content-wrapper">
+            <div class="planet-picture">
+                <img class="planet-pic overview overview-pic pic-<%- name.toLowerCase() %>" src="<%- images.planet %>" alt="the surface of <%-name%>">
+                <img class=" planet-pic structure structure-pic hide pic-<%- name.toLowerCase() %>" src="<%- images.internal %>" alt="the internal core of <%-name%>">
+                <div class="surface-wrapper"><img class=" planet-pic surface surface-pic hide surface-<%- name.toLowerCase() %>>" src="<%- images.geology %>" alt="the geology of <%-name%>"></div>
             </div>
-            <div class=" hide info-txt structure structure-txt">
-                <h2><%-name%></h2>
-                <p><%-structure.content%></p>
-                <small class="washed-out">Source: <a class='planet-link' href="<%-overview.source%>" target="_blank">Wikipedia</a></small>
-            </div>
-            <div class=" hide info-txt surface-txt">
-                <h2><%-name%></h2>
-                <p><%-geology.content%></p>
-                <small class="washed-out">Source: <a class='planet-link' href="<%-overview.source%>" target="_blank">Wikipedia</a></small>
+            <div class="info-card">
+                <div class="txt-wrapper">
+                    <div class="info-txt overview overview-txt">
+                        <h2><%-name%></h2>
+                        <p><%-overview.content%></p>
+                        <small class="washed-out">Source: <a class='planet-link' href="<%-overview.source%>" target="_blank">Wikipedia</a></small>
+                    </div>
+                    <div class=" hide info-txt structure structure-txt">
+                        <h2><%-name%></h2>
+                        <p><%-structure.content%></p>
+                        <small class="washed-out">Source: <a class='planet-link' href="<%-overview.source%>" target="_blank">Wikipedia</a></small>
+                    </div>
+                    <div class=" hide info-txt surface-txt">
+                        <h2><%-name%></h2>
+                        <p><%-geology.content%></p>
+                        <small class="washed-out">Source: <a class='planet-link' href="<%-overview.source%>" target="_blank">Wikipedia</a></small>
+                    </div>
+                </div>
+                <div class="button-wrapper tabs-lg">
+                    <nav  class="big-tabs ">
+                        <div class="big-tab-link border-b overview active-<%=name%>"><small>01</small><h3 class="overview">overview</h3></div>
+                        <div class="big-tab-link border-b structure inactive active-<%=name%>"><small>02</small ><h3 class="structure">Internal structure</h3></div>
+                        <div class="big-tab-link border-b surface inactive active-<%=name%>"><small>03</small><h3 class="surface">Internal surface</h3></div>
+                    </nav>
+                </div>
             </div>
         </div>
-        <div class="button-wrapper tabs-lg">
-            <nav  class="big-tabs ">
-                <div class="big-tab-link border-b overview active-<%=name%>"><small>01</small><h3 class="overview">overview</h3></div>
-                <div class="big-tab-link border-b structure inactive active-<%=name%>"><small>02</small ><h3 class="structure">Internal structure</h3></div>
-                <div class="big-tab-link border-b surface inactive active-<%=name%>"><small>03</small><h3 class="surface">Internal surface</h3></div>
-            </nav>
+        <div class="info-facts">
+            <div class="fact">
+                <h3 class="washed-out">Rotation Time</h3>
+                <h2><%- rotation %></h2>
+            </div>
+            <div class="fact">
+                <h3 class="washed-out">Revolution Time</h3>
+                <h2><%- revolution %></h2>
+            </div>
+            <div class="fact">
+                <h3 class="washed-out">Radius</h3>
+                <h2><%- radius %></h2>
+    
+            </div>
+            <div class="fact">
+                <h3 class="washed-out">Average Temp.</h3>
+                <h2><%- temperature %></h2>
+            </div>
         </div>
-    </div>
-</div>
-<div class="info-facts">
-    <div class="fact">
-        <h3 class="washed-out">Rotation Time</h3>
-        <h2><%- rotation %></h2>
-    </div>
-    <div class="fact">
-        <h3 class="washed-out">Revolution Time</h3>
-        <h2><%- revolution %></h2>
-    </div>
-    <div class="fact">
-        <h3 class="washed-out">Radius</h3>
-        <h2><%- radius %></h2>
+    </main>
+    
 
-    </div>
-    <div class="fact">
-        <h3 class="washed-out">Average Temp.</h3>
-        <h2><%- temperature %></h2>
-    </div>
-</div>
+    <footer>
+        
+    </footer>

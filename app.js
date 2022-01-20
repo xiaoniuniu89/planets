@@ -17,7 +17,7 @@ app.use(morgan('dev'))
 app.listen(process.env.PORT);
 
 app.get('/', (req, res) => {
-    res.redirect('/mercury')
+    res.redirect('/earth')
 });
 
 app.use(planetRoutes)
