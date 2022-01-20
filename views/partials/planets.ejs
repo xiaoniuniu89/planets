@@ -1,0 +1,31 @@
+<div class="content-wrapper">
+    <div class="planet-picture">
+        <img class="pic-<%- name.toLowerCase() %>" src="<%- images.planet %>" alt="a picture of the surface of <%-name%>">
+    </div>
+    <div class="info-card">
+        <div class="info-txt">
+            <h2><%-name%></h2>
+            <p><%-overview.content%></p>
+            <small class="washed-out">Source: <a class='planet-link' href="<%-overview.source%>" target="_blank">Wikipedia</a></small>
+        </div>
+    </div>
+</div>
+<div class="info-facts">
+    <div class="fact">
+        <h3 class="washed-out">Rotation Time</h3>
+        <h2><%- rotation %></h2>
+    </div>
+    <div class="fact">
+        <h3 class="washed-out">Revolution Time</h3>
+        <h2><%- revolution %></h2>
+    </div>
+    <div class="fact">
+        <h3 class="washed-out">Radius</h3>
+        <h2><%- radius %></h2>
+
+    </div>
+    <div class="fact">
+        <h3 class="washed-out">Average Temp.</h3>
+        <h2><%- temperature %></h2>
+    </div>
+</div>
