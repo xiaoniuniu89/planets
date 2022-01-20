@@ -217,13 +217,13 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-around;
-   
     border-bottom: 1px solid var(--dark-grey);
 }
 
 
 .mobile-tab-link {
     padding: 1em .5em;
+    cursor: pointer;
 }
 
 
@@ -272,6 +272,7 @@ body {
     display: flex;
     justify-content: center;
     margin: 5.5em 0;
+    position: relative;
 }
 
 .planet-picture img {
@@ -360,6 +361,29 @@ body {
     align-items: center;
     margin: 1em 0;
     padding: .8em;
+}
+
+.surface-wrapper {
+    position: absolute; bottom: 0;
+}
+
+.surface-pic {
+    width: 56.5px; height: 74.5px;
+    position: relative; top: 50px; 
+}
+
+.surface-pic.pic-mercury {
+    top: 60px;
+} 
+
+.surface-pic.pic-saturn {
+    top: 15px;
+} 
+
+@media screen and (min-width: 450px) {
+    .surface-pic.pic-saturn {
+        top: -10px;
+    } 
 }
 
 @media screen and (min-width: 768px) {

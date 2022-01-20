@@ -1,6 +1,8 @@
 <div class="content-wrapper">
     <div class="planet-picture">
-        <img class="pic-<%- name.toLowerCase() %>" src="<%- images.planet %>" alt="a picture of the surface of <%-name%>">
+        <img class="planet-pic overview overview-pic pic-<%- name.toLowerCase() %>" src="<%- images.planet %>" alt="the surface of <%-name%>">
+        <img class=" planet-pic structure structure-pic hide pic-<%- name.toLowerCase() %>" src="<%- images.internal %>" alt="the internal core of <%-name%>">
+        <div class="surface-wrapper"><img class=" planet-pic surface surface-pic hide pic-<%- name.toLowerCase() %>" src="<%- images.geology %>" alt="the geology of <%-name%>"></div>
     </div>
     <div class="info-card">
         <div class="info-txt">
