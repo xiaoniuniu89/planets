@@ -601,7 +601,7 @@ body {
         flex-direction: row;
         /* height: 92vh; */
         width: 90%;
-        padding: 3em ;
+        padding: 3em 3em 1em 3em;
     }
 
     .tabs-lg {
@@ -648,7 +648,7 @@ body {
     .info-facts {
         width: 80%;
         gap: 2em;
-        padding: 1em 0 3em;
+        padding: .5em 0 3em;
         opacity: .9;
     }
 
